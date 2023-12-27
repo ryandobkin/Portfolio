@@ -1,6 +1,6 @@
-# Unity Projects
+# Function Visualizer
 
-Function Visualizer in Unity
+Function Visualizer with Location-Based Shading in Unity
 
 Followed from https://catlikecoding.com/unity/tutorials/
 

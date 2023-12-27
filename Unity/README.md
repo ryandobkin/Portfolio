@@ -6,3 +6,5 @@ Followed from https://catlikecoding.com/unity/tutorials/
 
 
 Specifically, These three tutorials: [Building a Graph](https://catlikecoding.com/unity/tutorials/basics/building-a-graph/), [Mathematical Surfaces](https://catlikecoding.com/unity/tutorials/basics/mathematical-surfaces/), and [Measuring Performance](https://catlikecoding.com/unity/tutorials/basics/measuring-performance/)
+
+![](https://github.com/ryandobkin/Portfolio/blob/main/Unity/functionvisualizer_githubpreview.gif)

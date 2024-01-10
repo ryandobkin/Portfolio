@@ -176,7 +176,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -487,7 +487,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 45
   orthographic: 0
   orthographic size: 1
   m_Depth: -1
@@ -514,7 +514,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.25000006, y: 0.25000006, z: -0.06698733, w: 0.9330127}
-  m_LocalPosition: {x: -1.5, y: 1.5, z: -3}
+  m_LocalPosition: {x: -1.5, y: 1.75, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -820,6 +820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display: {fileID: 1592086523}
+  displayMode: 0
   sampleDuration: 1
 --- !u!1 &1947878757
 GameObject:
@@ -907,6 +908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1990249456}
   - component: {fileID: 1990249455}
+  - component: {fileID: 1990249457}
   m_Layer: 0
   m_Name: Graph
   m_TagString: Untagged
@@ -921,14 +923,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990249454}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352b48fa79997b34a8f69c7b7c8f5bbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pointPrefab: {fileID: 467602599272650942, guid: b98f500b9d40978448a5bfd52cd6619c, type: 3}
-  resolution: 100
-  function: 4
+  resolution: 200
+  function: 0
+  transitionMode: 0
+  functionDuration: 1
+  transitionDuration: 1
 --- !u!4 &1990249456
 Transform:
   m_ObjectHideFlags: 0
@@ -944,6 +949,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1990249457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990249454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad9d177863c783419b1108ab5b89b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 1000
+  function: 0
+  transitionMode: 0
+  functionDuration: 2
+  transitionDuration: 1
+  computeShader: {fileID: 7200000, guid: cf4a07f6964ca604e91f7526ad272e63, type: 3}
+  material: {fileID: 2100000, guid: 0e6c74eaa285da644b75f192b7d8119a, type: 2}
+  mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

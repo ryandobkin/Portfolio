@@ -1,4 +1,4 @@
-# Function Visualizer
+# Unity Function Visualizer
 
 Function Visualizer created in Unity, built with C# and HLSL/ShaderLab.
 

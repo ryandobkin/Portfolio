@@ -9,5 +9,6 @@ Currently, I've completed:
 3. Function Visualizer (Personal)
 
 Working on:
-1. Full stack website via my web dev class
-2. Learning assembley via my computer architecture/assembly class
+
+1. Full stack website (Web Development)
+2. Learning Assembley (Computer Architecture and Assembley Language)

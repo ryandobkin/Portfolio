@@ -1,0 +1,21 @@
+{
+  "name": "games-rest",
+  "version": "2023",
+  "description": "",
+  "main": "games-controller.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon games-controller.mjs",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "npm:Express@^3.0.1",
+    "Express": "^3.0.1",
+    "mongoose": "^6.12.7",
+    "nodemon": "^3.1.0",
+    "rest": "^2.0.0"
+  }
+}

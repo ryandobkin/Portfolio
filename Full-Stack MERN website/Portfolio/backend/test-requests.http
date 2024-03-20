@@ -1,0 +1,88 @@
+### CREATE five documents.
+POST http://localhost:3000/games HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Destiny 2",
+    "price": 59.99,
+    "rating": 85,
+    "date": "2017-9-6"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/games HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Counter Strike 2",
+    "price": 0,
+    "rating": 82,
+    "date": "2023-9-27"
+}
+
+### CREATE 3
+POST http://localhost:3000/games HTTP/1.1
+content-type: application/json
+
+{
+    "name": "New World",
+    "price": 39.99,
+    "rating": 70,
+    "date": "2021-9-28"
+}
+
+### CREATE 4
+POST http://localhost:3000/games HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Warframe",
+    "price": 0,
+    "rating": 69,
+    "date": "2013-3-25"
+}
+
+### CREATE 5
+POST http://localhost:3000/games HTTP/1.1
+content-type: application/json
+
+{
+    "name": "DOOM Eternal",
+    "price": 39.99,
+    "rating": 88,
+    "date": "2020-3-20"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/games HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/games/65f15b801ef2f304abc45e78 HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace the ID in the following request with one that exists
+### and update the year:
+PUT http://localhost:3000/games/65f15b801ef2f304abc45e78 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Name",
+    "price": 0,
+    "rating": 0,
+    "date": ""
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/games/64d3afbb0816f78a7cedf90a HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/games HTTP/1.1
+

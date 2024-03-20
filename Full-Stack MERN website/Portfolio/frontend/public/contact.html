@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ryan Dobkin - Contact</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <h1><img src="android-chrome-192x192.png">Ryan Dobkin</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <p>Please use this form if you'd like to contact me.</p>
+            <article>
+                <h3>How How can I help you?</h3>
+                <p>*Fields are required.</p>
+                <form action="/results" method="POST">
+                    <fieldset>
+                        <legend>Please enter contact information</legend>
+                        <label for="firstlast" class="required">First and Last Name</label>
+                            <input
+                                type="text"
+                                name="firstlast" id="firstlast"
+                                size="30"
+                                maxlength="100"
+                                required
+                                placeholder="First and Last Name"
+                                autofocus
+                            />
+                        
+                        <label for="email" class="required">Email</label>
+                            <input type="email"
+                                name="email" id="email"
+                                size="30" maxlength="100"
+                                required
+                                pattern="[^ @]+@[^ @]+.[a-z]+"
+                                placeholder="name@host.com"
+                            />
+
+                        <p><label for="message" class="required">Please enter your message here</label>
+                            <textarea name="message" id="message" minlength="3" maxlength="250" placeholder="Write 250 characters or less." required></textarea>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Please provide feedback</legend>
+                            <label for="where">Where did you hear about me?</label>
+                                <select name="referrer" id="where">
+                                    <option value="LinkedIn">LinkedIn</option>
+                                    <option value="Handshake">Handshake</option>
+                                    <option value="GitHub">GitHub</option>
+                                    <option value="Other" selected>Other</option>
+                                </select>
+                            
+                            <p>Did you have any issues on this site?
+                                <label for="no">
+                                    <input type="radio" name="issue" id="no" value="did not"">
+                                    No, no issues.</label>
+                                <label for="yes">
+                                    <input type="radio" name="issue" id="yes" value="did">
+                                    Yes, I had atleast one issue.</label>
+                            </p>
+
+                            <p>If you had issues, which best describes them?</p>
+                                <label for="nav" title="navigation issues">
+                                    <input type="checkbox" name="issuelist" id="nav" value="ui issue">
+                                    I had some navigation issues.
+                                </label>
+                                
+                                <label for="gallery">
+                                    <input type="checkbox" name="issuelist" id="gallery" value="gallery issue">
+                                    I had some issue with the photo gallery.
+                                </label>
+
+                                <label for="contact">
+                                    <input type="checkbox" name="issuelisat" id="contact" value="contact issue">
+                                    I had some issue with the contact form.
+                                </label>
+
+                                <label for="other">
+                                    <input type="checkbox" name="issuelist" id="other" value="other issue">
+                                    I had some other issue.
+                                </label>
+                            <label id="submit">
+                                <button type="submit" id="submit" name="results">Submit</button>
+                            </label>
+                    </fieldset>
+
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ryan Dobkin</p>
+    </footer>
+</body>
+</html>

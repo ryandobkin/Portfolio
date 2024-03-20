@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ryan Dobkin - Order</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <h1><img src="android-chrome-192x192.png">Ryan Dobkin</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Order</h2>
+            <article>
+                <p>Use this form to submit an order request.</p>
+                <p>*Fields are required.</p>
+                <form action="/orders" method="POST">
+                    <fieldset>
+                        <legend>Please enter contact information</legend>
+                        <label for="firstlast" class="required">First and Last Name</label>
+                            <input
+                                type="text"
+                                name="firstlast" id="firstlast"
+                                size="30"
+                                maxlength="100"
+                                required
+                                placeholder="First and Last Name"
+                                autofocus
+                            />
+                        
+                        <label for="email" class="required">Email</label>
+                            <input type="email"
+                                name="email" id="email"
+                                size="30" maxlength="100"
+                                required
+                                pattern="[^ @]+@[^ @]+.[a-z]+"
+                                placeholder="name@host.com"
+                            />
+
+                        <label for="address" class="required">Address</label>
+                            <input type="address"
+                                name="address" id="address"
+                                size="30" maxlength="100"
+                                required
+                                placeholder="address, city, state, zip"
+                            />
+
+                        <p><label for="delivery">Delivery Instructions: </label>
+                            <textarea name="delivery" id="delivery" maxth="250" placeholder="Write 250 characters or less."></textarea>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Pet Products for Sale</legend>
+                            <table>
+                                <caption>Select a product</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>Product</th>
+                                        <th>Current Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AGYM</td>
+                                        <td><label for="AGYM">
+                                            <input type="radio" name="purchase" id="AGYM" value="AGYM">
+                                            Spinning Cat Scratcher Ball
+                                        </label></td>
+                                        <td>52.99</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Jasonwell</td>
+                                        <td><label for="Jasonwell">
+                                            <input type="radio" name="purchase" id="Jasonwell" value="Jasonwell">
+                                            Foldable Dog Pool
+                                        </label></td>
+                                        <td>27.25</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Expawlorer</td>
+                                        <td><label for="Expawlorer">
+                                            <input type="radio" name="purchase" id="Expawlorer" value="Expawlorer">
+                                            Dog Fence Window
+                                        </label></td>
+                                        <td>30.50</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Lollimeow</td>
+                                        <td><label for="Lollimeow">
+                                            <input type="radio" name="purchase" id="Lollimeow" value="Lollimeow">
+                                            Capsule Pet Travel Backpack
+                                        </label></td>
+                                        <td>59.00</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Drool'd</td>
+                                        <td><label for="Drool'd">
+                                            <input type="radio" name="purchase" id="Drool'd" value="Drool'd">
+                                            Cat Hamster Wheel
+                                        </label></td>
+                                        <td>349.75</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <label for="quantity" class="required">Enter a quantity betwen 1 and 99:</label>
+                            <input
+                                type="number"
+                                name="quantity" id=quantity"
+                                size="1"
+                                maxlength="100"
+                                required
+                                placeholder="Quantity"
+                                autofocus
+                            />
+                            <label id="submit">
+                                <button type="submit" id="submit" name="results">Submit</button>
+                            </label>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ryan Dobkin</p>
+    </footer>
+</body>
+</html>

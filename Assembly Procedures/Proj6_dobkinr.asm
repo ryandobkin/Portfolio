@@ -1,11 +1,8 @@
 TITLE Low-level I/O procedures   (Proj6-dobkinr.asm)
 
-; Author:	Ryan Dobkin
+; Author:        Ryan Dobkin
 ; Last Modified: 3/17/24
-; OSU email address: dobkinr@oregonstate.edu
-; Course number/section:   CS271 Section 400
-; Project Number:   6      Due Date: 3/17/24
-; Description: Takes n integer inputs from user, translates them from ASCII to decimal SDWORD, then back to ASCII.
+; Description:   Takes n integer inputs from user, translates them from ASCII to decimal SDWORD, then back to ASCII.
 ; Displays all n inputs, sum of inputs, and truncated avg.
 
 INCLUDE Irvine32.inc
@@ -264,7 +261,6 @@ WriteVal PROC
   mov   ECX, 10
   div   ECX
   add   EDX, 48              ; adds 48 to convert back to ASCII value
-  ; need to find way to stop it
   or    EBX, EDX
   pop   ECX
   loop  _Converter

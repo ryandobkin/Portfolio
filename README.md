@@ -1,14 +1,14 @@
-# Portfolio
+# Portfolio Projects
 
 Collection of my coding projects
 
 Currently, I've completed:
 
-1. Chess Simulator (Intro to Computer Science)
-2. Hash Map (Data Structures)
-3. Function Visualizer (Personal)
+1. Chess Simulator
+2. Hash Map
+3. Function Visualizer
+4. Full stack MERN website
+5. Assembly Procedures
 
 Working on:
-
-1. Full stack website (Web Development)
-2. Learning Assembley (Computer Architecture and Assembley Language)
+Hive-Based network monitor and manager applications that communicate over internet
